@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>92 OUTLAW</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .logo {
+      animation: slideDown 2s ease forwards;
+    }
+
+    .logo h2 {
+      font-size: 2rem;
+      color: #ff0044;
+      letter-spacing: 5px;
+      margin-bottom: 0.3em;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease forwards 1s;
+    }
+
+    .logo h1 {
+      font-size: 6rem;
+      background: linear-gradient(to right, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease forwards 2s;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      margin-top: 2em;
+      color: #ccc;
+      animation: floatText 3s infinite ease-in-out;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards 3s;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffff;
+      }
+      to {
+        text-shadow: 0 0 30px #ff00ff;
+      }
+    }
+
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h2>OUTLAW</h2>
+      <h1>92</h1>
+    </div>
+    <div class="tagline">Yakında burada olacağız. Hazır olun.</div>
+    <footer>© 2025 / 92 Outlaw. Tüm hakları saklıdır.</footer>
+  </div>
+
+  <!-- Müzik (İnstrumental ve telifsiz örnek URL) -->
+  <audio autoplay loop>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Komiku_-_Its_time_for_adventure/Komiku_-_Battle_of_Pogs.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
